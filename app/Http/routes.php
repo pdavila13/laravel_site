@@ -21,7 +21,7 @@ Route::get('services', 'PagesController@services');
 
 Route::get('resume', 'PagesController@resume');
 
-Route::get('skills', 'PagesController@resume');
+Route::get('skills', 'PagesController@skills');
 
 Route::get('contact', 'PagesController@contact');
 
