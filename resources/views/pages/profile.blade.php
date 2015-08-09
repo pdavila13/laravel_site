@@ -10,7 +10,7 @@
                     <!-- PROFILE PICTURE START -->
                     <div class="col-md-4 hidden-xs hidden-sm match-height pp-wrapper">
                         <div class="profile-picture style-two">
-                            <img src="assets/images/profile.png" alt="profile picture" class="img-responsive"/>
+                            <img src="{{ asset('assets/images/profile.png') }}" alt="profile picture" class="img-responsive"/>
 
                             <h4 class="title uppercase">Técnico informático</h4>
                         </div>
