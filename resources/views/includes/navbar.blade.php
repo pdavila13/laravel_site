@@ -20,15 +20,15 @@
                 </li>
 
                 <li>
-                    <a href="{{ url('#services') }}">Servicios</a>
-                </li>
-
-                <li>
                     <a href="{{ url('profile') }}"> Perfil </a>
                 </li>
 
                 <li>
                     <a href="{{ url('portafolio') }}">Portfolio</a>
+                </li>
+
+                <li>
+                    <a href="{{ url('#services') }}">Servicios</a>
                 </li>
 
                 <li>
@@ -40,7 +40,7 @@
                 </li>
 
                 <li>
-                    <a href="{{ url('http://www.paolodavila.com/mediawiki') }}">MediaWiki</a>
+                    <a href="{{ url('http://www.paolodavila.com/mediawiki') }}" target="_blank">MediaWiki</a>
                 </li>
 
                 <li>

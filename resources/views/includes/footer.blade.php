@@ -3,11 +3,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-
+                <!--
                 <div class="pages-scroll">
                     <a href="{{ url('/') }}"><i class="icon-Arrow-Up"></i></a>
                 </div>
-
+                -->
                 <!-- //.page-scroll -->
 
                 <ul class="list-inline social-icons">
@@ -86,7 +86,7 @@
 
 <!-- Map JS -->
 <script src="https://maps.googleapis.com/maps/api/js"></script>
-<script src="assets/js/map.js"></script>
+<script src="{{ asset('assets/js/map.js') }}"></script>
 
 <!-- Text Rotator JS -->
 <script src="{{ asset ('assets/js/text-rotator.js') }}"></script>

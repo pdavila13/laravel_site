@@ -76,6 +76,28 @@
                             <!-- //.page-scroll -->
                         </div>
                         <!-- //.item -->
+
+                        <div class="item">
+                            <h1 class="small">
+                                <span class="blinker"></span>
+                            </h1>
+
+                            <h1>Desarrollo web
+                                <span class="blinker"></span>
+                            </h1>
+
+                            <p>Aplicaciones web 100% a su medida</p>
+
+                            <br/><br/>
+
+                            <div>
+                                <a href="{{ url('profile') }}" class="btn btn-lg btn-custom">
+                                    Más sobre mí
+                                </a>
+                            </div>
+                            <!-- //.page-scroll -->
+                        </div>
+                        <!-- //.item -->
                     </div>
                     <!-- //.carousel-inner -->
                 </div>
@@ -117,8 +139,8 @@
                                 <h4 class="uppercase">1. Ordenadores y servidores</h4>
 
                                 <p class="text-grey">
-                                    Reparación y limpieza en ordenadores de sobremesa, portátiles, netbooks, etc. <br/><br/>
-                                    Reinstalación y optimización de sistemeas operativos. <br/><br/>
+                                    Reparación y limpieza de ordenadores de sobremesa, portátiles, netbooks, etc. <br/><br/>
+                                    Reinstalación y optimización de sistemas operativos. <br/><br/>
                                     Soporte y mantenimiento remoto linux.
                                 </p>
                             </div>
@@ -186,7 +208,7 @@
                                 <p class="text-grey">
                                     Venta de ordenadores de série y diferentes marcas. <br/><br/>
                                     Venta de ordenadores a gusto y medida del cliente. <br/><br/>
-                                    Venta de periféricos, teléfonos moviles y tablets.
+                                    Venta de periféricos, teléfonos móviles y tablets.
                                 </p>
                             </div>
                             <!-- //.inner-content -->

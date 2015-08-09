@@ -26,7 +26,7 @@
                                     <h2 class="section-title uppercase">Información</h2>
 
                                     <p>
-                                        Paolo Dávila, 24 años. Nació y creció en Lima-Perú. Viajó a Europa para estudiar y acabar la ESO.
+                                        Paolo Dávila, 24 años. Nació y creció en Perú. Viajó a Europa para estudiar y acabar la ESO.
                                         Al finalizar los estudios obligatorios, siguió estudiando y se formó como técnico en
                                         <strong>Sistemas informáticos en redes locales</strong>. Unos años después continuó estudiando
                                         <strong>Administración de sistemas informáticos en red</strong>.
@@ -36,8 +36,8 @@
                                     <span class="divider"></span>
 
                                     <p class="text-grey">
-                                        Actualmente está trabajando como autónomo en un Instituto de formación profesional como técnico informático
-                                        y requiere de amplia experiencia en el campo de las tecnologías de la información y la comunicación.
+                                        Actualmente está trabajando como autónomo en el<a href="http://www.iesebre.com" target="_blank"> Institut de l'Ebre</a> de formación profesional como técnico informático.
+                                        Está capacitado profesionalmente en el campo de las tecnologías de la información y la comunicación.
                                     </p>
 
                                     <p class="text-grey">
