@@ -28,9 +28,9 @@
                                     <p>
                                         Paolo Dávila, 24 años. Nació y creció en Perú. Viajó a Europa para estudiar y acabar la ESO.
                                         Al finalizar los estudios obligatorios, siguió estudiando y se formó como técnico en
-                                        <strong>Sistemas informáticos en redes locales</strong>. Unos años después continuó estudiando
-                                        <strong>Administración de sistemas informáticos en red</strong>.
-                                        Recientemente está cursando <strong>Desarrollo de aplicaciones multimedia</strong> y otros cursos on-line.
+                                        <strong>Sistemas Microinformáticos y Redes</strong>. Unos años después continuó estudiando
+                                        <strong>Administración de Sistemas Informáticos en Red</strong>.
+                                        Recientemente está cursando <strong>Desarrollo de Aplicaciones Multiplataforma</strong> y otros cursos on-line.
                                     </p>
 
                                     <span class="divider"></span>

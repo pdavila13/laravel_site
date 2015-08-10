@@ -1,16 +1,22 @@
 @extends('layouts.nav')
 
 @section('container')
+    <!-- STRENGHTS SECTION START -->
+    <section id="strenghts" class="section bg-image-yes">
+
+    </section>
+    <!-- //STRENGHTS SECTION END -->
+
     <!-- RESUME SECTION START -->
     <section id="resume" class="section">
         <div class="container section-wrapper">
             <div class="section-content">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center">
-                        <h2 class="section-title uppercase">My Resume</h2>
+                        <h2 class="section-title uppercase">Currículum</h2>
 
                         <p class="section-subtitle">
-                            If you call failures experiments, you can put them in your resume and claim them as achievements.
+                            Descripción
                         </p>
 
                         <span class="divider center"></span>
@@ -23,15 +29,15 @@
                 <div class="row education">
                     <div class="col-md-10 col-md-offset-1">
                         <h3>
-                            My Education
+                            Educación
                             <br>
-                            2003 - 2012
+                            2005 - 2015
                         </h3>
 
                         <div class="panel-group resume" id="education">
                             <div class="resume-item">
                                 <div class="resume-year">
-                                    <span class="resume-year">2010 - 2012</span>
+                                    <span class="resume-year">2014 - Actualmente</span>
                                 </div>
                                 <!-- //.resume-year -->
 
@@ -43,7 +49,9 @@
                                 <div class="panel">
                                     <div class="panel-heading">
                                         <div class="panel-title">
-                                            <h4 class="resume-title">Masters Degree - University Name</h4>
+                                            <h4 class="resume-title">Desarrollo de Aplicaciones Multiplataforma  -
+                                                <a href="http://www.iesebre.com">Institut de l'Ebre</a>
+                                            </h4>
                                         </div>
                                         <!-- //.panel-title -->
                                     </div>
@@ -52,7 +60,7 @@
                                     <div id="education1" class="panel-collapse collapse in">
                                         <div class="panel-body text-grey">
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                                Descripción DAM
                                             </p>
                                         </div>
                                         <!-- //.panel-body -->
@@ -65,28 +73,30 @@
 
                             <div class="resume-item">
                                 <div class="resume-year">
-                                    <span class="resume-year">2005 - 2008</span>
+                                    <span class="resume-year">2012 - 2014</span>
                                 </div>
                                 <!-- //.resume-year -->
 
                                 <div class="resume-btn">
-                                    <a href="#education2" class="collapsed" data-toggle="collapse" data-parent="#education"></a>
+                                    <a href="#education2" data-toggle="collapse" data-parent="#education"></a>
                                 </div>
                                 <!-- //.resume-btn -->
 
                                 <div class="panel">
                                     <div class="panel-heading">
                                         <div class="panel-title">
-                                            <h4 class="resume-title">Bachelors Degree - University Name</h4>
+                                            <h4 class="resume-title">Administración de Sistemas Informáticos en Red  -
+                                                <a href="http://www.iesebre.com">Institut de l'Ebre</a>
+                                            </h4>
                                         </div>
                                         <!-- //.panel-title -->
                                     </div>
                                     <!-- //.panel-heading -->
 
-                                    <div id="education2" class="panel-collapse collapse">
+                                    <div id="education2" class="panel-collapse collapse in">
                                         <div class="panel-body text-grey">
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                                Descripción ASIX
                                             </p>
                                         </div>
                                         <!-- //.panel-body -->
@@ -99,7 +109,7 @@
 
                             <div class="resume-item">
                                 <div class="resume-year">
-                                    <span class="resume-year">2003 - 2005</span>
+                                    <span class="resume-year">2010 - 2012</span>
                                 </div>
                                 <!-- //.resume-year -->
 
@@ -111,7 +121,9 @@
                                 <div class="panel">
                                     <div class="panel-heading">
                                         <div class="panel-title">
-                                            <h4 class="resume-title">Graduation - College Name</h4>
+                                            <h4 class="resume-title">Sistemas Microinformáticos y Redes  -
+                                                <a href="http://www.iesebre.com">Institut de l'Ebre</a>
+                                            </h4>
                                         </div>
                                         <!-- //.panel-title -->
                                     </div>
@@ -120,7 +132,43 @@
                                     <div id="education3" class="panel-collapse collapse">
                                         <div class="panel-body text-grey">
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                                Descripción SMX.
+                                            </p>
+                                        </div>
+                                        <!-- //.panel-body -->
+                                    </div>
+                                    <!-- //.panel-collapse -->
+                                </div>
+                                <!-- //.panel -->
+                            </div>
+                            <!-- //.resume-item -->
+
+                            <div class="resume-item">
+                                <div class="resume-year">
+                                    <span class="resume-year">2005 - 2010</span>
+                                </div>
+                                <!-- //.resume-year -->
+
+                                <div class="resume-btn">
+                                    <a href="#education4" class="collapsed" data-toggle="collapse" data-parent="#education"></a>
+                                </div>
+                                <!-- //.resume-btn -->
+
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <div class="panel-title">
+                                            <h4 class="resume-title">Educación Secundaria Obligatoria  -
+                                                <a href="http://agora.xtec.cat/iesjbau/">INS Joaquin Bau</a>
+                                            </h4>
+                                        </div>
+                                        <!-- //.panel-title -->
+                                    </div>
+                                    <!-- //.panel-heading -->
+
+                                    <div id="education4" class="panel-collapse collapse">
+                                        <div class="panel-body text-grey">
+                                            <p>
+                                                Descripción de la ESO.
                                             </p>
                                         </div>
                                         <!-- //.panel-body -->
@@ -141,15 +189,15 @@
                 <div class="row work-experience">
                     <div class="col-md-10 col-md-offset-1">
                         <h3>
-                            Work Experience
+                            Experiencia laboral
                             <br>
-                            2006 - Now
+                            2011 - Actualmente
                         </h3>
 
                         <div class="panel-group resume" id="work">
                             <div class="resume-item">
                                 <div class="resume-year">
-                                    <span class="resume-year">2013 - Now</span>
+                                    <span class="resume-year">2014 - Actualmente</span>
                                 </div>
                                 <!-- //.resume-year -->
 
@@ -161,7 +209,9 @@
                                 <div class="panel">
                                     <div class="panel-heading">
                                         <div class="panel-title">
-                                            <h4 class="resume-title">Senior Designer - Galley La Company</h4>
+                                            <h4 class="resume-title">Técnico informático -
+                                                <a href="http://www.iesebre.com">Institut de l'Ebre</a>
+                                            </h4>
                                         </div>
                                         <!-- //.panel-title -->
                                     </div>
@@ -170,9 +220,19 @@
                                     <div id="work1" class="panel-collapse collapse in">
                                         <div class="panel-body text-grey">
                                             <p>
-                                                Responsibilities:
-                                                <br>
-                                                Design of print collateral and websites for various clients and markets, development of new and existing brands, 3D modeling of floor and site plans.
+                                                Soporte informático:
+                                                <br><br/>
+
+                                                <strong>Manteniminiento de ordenadores,</strong> cuidado preventivo y correctivo de los equipos informáticos.
+                                                Actualizaciones de hardware y software, revisión de espacio en disco, defragmentación, etc.
+
+                                                <br/><br/>
+
+                                                <strong>Mantenimiento de servidores,</strong> actualización de software y hardware, copias de seguridad, visionado de logs, análisis de rendimiento, etc.
+
+                                                <br/><br/>
+
+                                                <strong>Mantenimiento de redes</strong>, asegurar la correcta operación de la red, tomando acciones remotas o localmente.
                                             </p>
                                         </div>
                                         <!-- //.panel-body -->
@@ -185,7 +245,7 @@
 
                             <div class="resume-item">
                                 <div class="resume-year">
-                                    <span class="resume-year">2010 - 2013</span>
+                                    <span class="resume-year">2012 - 2014</span>
                                 </div>
                                 <!-- //.resume-year -->
 
@@ -197,7 +257,9 @@
                                 <div class="panel">
                                     <div class="panel-heading">
                                         <div class="panel-title">
-                                            <h4 class="resume-title">Graphic Designer - Company Name</h4>
+                                            <h4 class="resume-title">Técnico informático (Becario) -
+                                                <a href="http://www.iesebre.com">Institut de l'Ebre</a>
+                                            </h4>
                                         </div>
                                         <!-- //.panel-title -->
                                     </div>
@@ -206,9 +268,19 @@
                                     <div id="work2" class="panel-collapse collapse">
                                         <div class="panel-body text-grey">
                                             <p>
-                                                Responsibilities:
-                                                <br>
-                                                Design of print collateral and trade show displays, redesign of company website and microsites, design and development of email blasts, development of brands for affiliate organizations.
+                                                Soporte informático:
+                                                <br><br/>
+
+                                                <strong>Manteniminiento de ordenadores,</strong> cuidado preventivo y correctivo de los equipos informáticos.
+                                                Actualizaciones de hardware y software, revisión de espacio en disco, defragmentación, etc.
+
+                                                <br/><br/>
+
+                                                <strong>Mantenimiento de servidores,</strong> actualización de software y hardware, copias de seguridad, visionado de logs, análisis de rendimiento, etc.
+
+                                                <br/><br/>
+
+                                                <strong>Mantenimiento de redes</strong>, asegurar la correcta operación de la red, tomando acciones remotas o localmente.
                                             </p>
                                         </div>
                                         <!-- //.panel-body -->
@@ -221,7 +293,7 @@
 
                             <div class="resume-item">
                                 <div class="resume-year">
-                                    <span class="resume-year">2007 - 2010</span>
+                                    <span class="resume-year">2012 - 2013</span>
                                 </div>
                                 <!-- //.resume-year -->
 
@@ -233,7 +305,9 @@
                                 <div class="panel">
                                     <div class="panel-heading">
                                         <div class="panel-title">
-                                            <h4 class="resume-title">IT Specialist - Company Name</h4>
+                                            <h4 class="resume-title">Técnico informático (Becario) -
+                                                <a href="http://www.recycling-system.com/">Recycling System</a>
+                                            </h4>
                                         </div>
                                         <!-- //.panel-title -->
                                     </div>
@@ -242,45 +316,11 @@
                                     <div id="work3" class="panel-collapse collapse">
                                         <div class="panel-body text-grey">
                                             <p>
-                                                Responsibilities:
-                                                <br>
-                                                Filming and editing of promotional videos, administration of system and network integrity.
-                                            </p>
-                                        </div>
-                                        <!-- //.panel-body -->
-                                    </div>
-                                    <!-- //.panel-collapse -->
-                                </div>
-                                <!-- //.panel -->
-                            </div>
-                            <!-- //.resume-item -->
+                                                Soporte informático:
+                                                <br><br/>
 
-                            <div class="resume-item">
-                                <div class="resume-year">
-                                    <span class="resume-year">2006 - 2007</span>
-                                </div>
-                                <!-- //.resume-year -->
-
-                                <div class="resume-btn">
-                                    <a href="#work4" class="collapsed" data-toggle="collapse" data-parent="#work"></a>
-                                </div>
-                                <!-- //.resume-btn -->
-
-                                <div class="panel">
-                                    <div class="panel-heading">
-                                        <div class="panel-title">
-                                            <h4 class="resume-title">Graphic Designer Intern - Company Name</h4>
-                                        </div>
-                                        <!-- //.panel-title -->
-                                    </div>
-                                    <!-- //.panel-heading -->
-
-                                    <div id="work4" class="panel-collapse collapse">
-                                        <div class="panel-body text-grey">
-                                            <p>
-                                                Responsibilities:
-                                                <br>
-                                                Redesign of brand guidelines and standards microsite, design of departmental logo lock-ups, photography of products for marketing collateral, design of corporate Twitter layout.
+                                                <strong>Manteniminiento de ordenadores,</strong> cuidado preventivo y correctivo de los equipos informáticos.
+                                                Actualizaciones de hardware y software, revisión de espacio en disco, defragmentación, etc.
                                             </p>
                                         </div>
                                         <!-- //.panel-body -->

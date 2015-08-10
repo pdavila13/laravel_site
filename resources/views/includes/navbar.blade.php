@@ -9,7 +9,7 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand visible-xs visible-sm" href="#page-top">page-top</a>
+            <a class="navbar-brand visible-xs visible-sm" href="#page-top">Menu</a>
         </div>
         <!-- //.navbar-header -->
 
@@ -24,10 +24,6 @@
                 </li>
 
                 <li>
-                    <a href="{{ url('portafolio') }}">Portfolio</a>
-                </li>
-
-                <li>
                     <a href="{{ url('#services') }}">Servicios</a>
                 </li>
 
@@ -36,7 +32,11 @@
                 </li>
 
                 <li>
-                    <a href="{{ url('references') }}">Referencias</a>
+                    <a href="{{ url('#references') }}">Referencias</a>
+                </li>
+
+                <li>
+                    <a href="{{ url('#portafolio') }}">Galeria</a>
                 </li>
 
                 <li>
@@ -44,7 +44,7 @@
                 </li>
 
                 <li>
-                    <a href="{{ url('http://www.google.com') }}">Contacto</a>
+                    <a href="{{ url('contact') }}">Contacto</a>
                 </li>
             </ul>
         </div>

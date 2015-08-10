@@ -34,7 +34,7 @@
 
                     <li>
                         <div class="item">
-                            <a href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
+                            <a href="{{ url('https://github.com/pdavila13') }}" target="_blank"><i class="fa fa-github"></i></a>
                         </div>
                         <!-- //.item -->
                     </li>
@@ -86,7 +86,7 @@
 
 <!-- Map JS -->
 <script src="https://maps.googleapis.com/maps/api/js"></script>
-<script src="{{ asset('assets/js/map.js') }}"></script>
+<script src="{{ asset ('assets/js/map.js') }}"></script>
 
 <!-- Text Rotator JS -->
 <script src="{{ asset ('assets/js/text-rotator.js') }}"></script>
