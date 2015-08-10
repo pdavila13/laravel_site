@@ -34,7 +34,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <div class="input-group input-group-lg">
-                                            <input type="text" name="name" id="name" class="form-control required" placeholder="Name" autocomplete="off">
+                                            <input type="text" name="name" id="name" class="form-control required" placeholder="Nombre" autocomplete="off">
                                         </div>
                                         <!-- //.input-group -->
                                     </div>
@@ -45,7 +45,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <div class="input-group input-group-lg">
-                                            <input type="email" name="email" id="email" class="form-control required email" placeholder="Email" autocomplete="off">
+                                            <input type="email" name="email" id="email" class="form-control required email" placeholder="Correo electrónico" autocomplete="off">
                                         </div>
                                         <!-- //.input-group -->
                                     </div>
@@ -59,7 +59,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <div class="input-group input-group-lg">
-                                            <input type="text" name="subject" id="subject" class="form-control required" placeholder="Subject" autocomplete="off">
+                                            <input type="text" name="subject" id="subject" class="form-control required" placeholder="Asunto" autocomplete="off">
                                         </div>
                                         <!-- //.input-group -->
                                     </div>
@@ -73,7 +73,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <div class="input-group input-group-lg">
-                                            <textarea name="message" id="message" class="form-control required" placeholder="Message"></textarea>
+                                            <textarea name="message" id="message" class="form-control required" placeholder="Mensaje"></textarea>
                                         </div>
                                         <!-- //.input-group -->
                                     </div>
