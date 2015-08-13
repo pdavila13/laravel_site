@@ -42,9 +42,9 @@ $(function(){
         e.preventDefault();
         
         var buttonCopy = $('#contact-form button').html(),
-            sendingMessage = 'Loading...',
-            errorMessage = 'Error Sending. Try Again Later',
-            okMessage = 'Email Sent Successfully';
+            sendingMessage = 'Cargando...',
+            errorMessage = 'Error al enviar. Inténtelo más tarde',
+            okMessage = 'Email enviado satisfactoriamente';
             
         $('#contact-form button').html("<i class='icon-Mail-Send'></i> " + sendingMessage);
         

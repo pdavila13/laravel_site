@@ -29,7 +29,7 @@
                     <div class="col-md-8 col-md-offset-2">
 
                         <!-- CONTACT FORM START -->
-                        <form action="{{ asset('contactMail/send_mail.php') }}" method="post" name="contact-form" id="contact-form" class="contact-form validate element-line" role="form">
+                        <form action="contactMail/send_mail.php" method="post" name="contact-form" id="contact-form" class="contact-form validate element-line" role="form">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
