@@ -41,7 +41,7 @@
 
                     <li>
                         <div class="item">
-                            <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                            <a href="#" target="_blank"><i class="fa fa-information"></i></a>
                         </div>
                         <!-- //.item -->
                     </li>

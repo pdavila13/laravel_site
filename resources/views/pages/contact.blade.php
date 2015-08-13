@@ -29,12 +29,12 @@
                     <div class="col-md-8 col-md-offset-2">
 
                         <!-- CONTACT FORM START -->
-                        <form action="{{ asset ('contact/send_mail.php') }}" method="post" name="contact-form" id="contact-form" class="contact-form validate element-line" role="form">
+                        <form action="{{ asset ('contactMail/send_mail.php') }}" method="post" name="contact-form" id="contact-form" class="contact-form validate element-line" role="form">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <div class="input-group input-group-lg">
-                                            <input type="text" name="name" id="name" class="form-control required" placeholder="Nombre" autocomplete="off">
+                                            <input type="text" name="name" id="name" class="form-control required" placeholder="Nombre y apellidos" autocomplete="off">
                                         </div>
                                         <!-- //.input-group -->
                                     </div>

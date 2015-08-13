@@ -342,4 +342,395 @@
         <!-- //.container -->
     </section>
     <!-- //RESUME SECTION END -->
+
+    <!-- LNAGUAGES SECTION START -->
+    <section id="milestones" class="section bg-image-yes">
+        <div class="container-fluid section-wrapper">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2 class="section-title uppercase">Idiomas</h2>
+
+                        <span class="divider center"></span>
+                    </div>
+                    <!-- //.col-md-8 -->
+                </div>
+                <!-- //.row -->
+
+                <!-- MILESTONES START -->
+                <div class="milestones">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 item">
+                            <div class="circle">
+                                <i class="icon-Microphone-3"></i>
+                            </div>
+                            <!-- //.circle -->
+
+                            <h4>Castellano</h4>
+                        </div>
+                        <!-- //.item -->
+
+                        <div class="col-sm-6 col-md-4 item">
+                            <div class="circle">
+                                <i class="icon-Microphone-4"></i>
+                            </div>
+                            <!-- //.circle -->
+
+                            <h4>Catalán</h4>
+                        </div>
+                        <!-- //.item -->
+
+                        <div class="col-sm-6 col-md-4 item">
+                            <div class="circle">
+                                <i class="icon-Microphone-2"></i>
+                            </div>
+                            <!-- //.circle -->
+
+                            <h4>Inglés</h4>
+                        </div>
+                        <!-- //.item -->
+                    </div>
+                    <!-- //.row -->
+                </div>
+                <!-- //MILESTONES END -->
+            </div>
+            <!-- //.section-content -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- //LANGUAGES SECTION END -->
+
+    <!-- SKILLS SECTION START -->
+    <section id="skills" class="section">
+        <div class="container section-wrapper">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2 class="section-title uppercase">Habilidades</h2>
+
+                        <p class="section-subtitle">Un ganador es alguien que trabaja para desarrollar sus habilidades, y utiliza estas habilidades para lograr sus metas.</p>
+
+                        <span class="divider center"></span>
+                    </div>
+                    <!-- //.col-md-8 -->
+                </div>
+                <!-- //.row -->
+
+                <!-- CIRCLE CHART START -->
+                <div class="circle-chart">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-2">
+                            <div class="item">
+                                <div class="circle">
+                                    <span class="item-progress" data-percent="75"></span>
+                                </div>
+                                <!-- //.circle -->
+
+                                <span class="percent">75%</span>
+
+                                <h4 class="text-center uppercase">HTML5 + CSS3</h4>
+                            </div>
+                            <!-- //.item -->
+                        </div>
+                        <!-- //.col-md-2 -->
+
+                        <div class="col-sm-4 col-md-2">
+                            <div class="item">
+                                <div class="circle">
+                                    <span class="item-progress" data-percent="35"></span>
+                                </div>
+                                <!-- //.circle -->
+
+                                <span class="percent">35%</span>
+
+                                <h4 class="text-center uppercase">Angular JS</h4>
+                            </div>
+                            <!-- //.item -->
+                        </div>
+                        <!-- //.col-md-2 -->
+
+                        <div class="col-sm-4 col-md-2">
+                            <div class="item">
+                                <div class="circle">
+                                    <span class="item-progress" data-percent="55"></span>
+                                </div>
+                                <!-- //.circle -->
+
+                                <span class="percent">55%</span>
+
+                                <h4 class="text-center uppercase">Laravel</h4>
+                            </div>
+                            <!-- //.item -->
+                        </div>
+                        <!-- //.col-md-2 -->
+
+                        <div class="col-sm-4 col-md-2">
+                            <div class="item">
+                                <div class="circle">
+                                    <span class="item-progress" data-percent="65"></span>
+                                </div>
+                                <!-- //.circle -->
+
+                                <span class="percent">65%</span>
+
+                                <h4 class="text-center uppercase">PHP</h4>
+                            </div>
+                            <!-- //.item -->
+                        </div>
+                        <!-- //.col-md-2 -->
+
+                        <div class="col-sm-4 col-md-2">
+                            <div class="item">
+                                <div class="circle">
+                                    <span class="item-progress" data-percent="45"></span>
+                                </div>
+                                <!-- //.circle -->
+
+                                <span class="percent">45%</span>
+
+                                <h4 class="text-center uppercase">XML</h4>
+                            </div>
+                            <!-- //.item -->
+                        </div>
+                        <!-- //.col-md-2 -->
+
+                        <div class="col-sm-4 col-md-2">
+                            <div class="item last">
+                                <div class="circle">
+                                    <span class="item-progress" data-percent="85"></span>
+                                </div>
+                                <!-- //.circle -->
+
+                                <span class="percent">85%</span>
+
+                                <h4 class="text-center uppercase">Otros</h4>
+                            </div>
+                            <!-- //.item -->
+                        </div>
+                        <!-- //.col-md-2 -->
+                    </div>
+                    <!-- //.row -->
+                </div>
+                <!-- //CIRCLE CHART END -->
+            </div>
+            <!-- //.section-content -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- SKILLS SECTION END-->
+
+    <!-- KNOWLEDGE SECTION START -->
+    <section id="knowledge" class="section">
+        <div class="container section-wrapper">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2 class="section-title uppercase">Conocimientos</h2>
+
+                        <p class="section-subtitle">El comportamiento humano se deriva de tres fuentes principales: el deseo, la emoción y el conocimiento.</p>
+
+                        <span class="divider center"></span>
+                    </div>
+                    <!-- //.col-md-8 -->
+                </div>
+                <!-- //.row -->
+
+                <!-- BAR CHART START -->
+                <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                        <div class="bar-chart">
+                            <div class="item">
+                                <h4 class="uppercase">Montaje y mantenimiento de equipos</h4>
+
+                                <div class="bar">
+                                    <span class="percent">100%</span>
+                                    <span class="item-progress" data-percent="100"></span>
+                                </div>
+                                <!-- //.bar -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <h4 class="uppercase">Fundamentos de Hardware</h4>
+
+                                <div class="bar">
+                                    <span class="percent">99%</span>
+                                    <span class="item-progress" data-percent="99"></span>
+                                </div>
+                                <!-- //.bar -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <h4 class="uppercase">Implantación de Sistemas Operativos</h4>
+
+                                <div class="bar">
+                                    <span class="percent">75%</span>
+                                    <span class="item-progress" data-percent="75"></span>
+                                </div>
+                                <!-- //.bar -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <h4 class="uppercase">Sistemas operativos monopuesto</h4>
+
+                                <div class="bar">
+                                    <span class="percent">80%</span>
+                                    <span class="item-progress" data-percent="80"></span>
+                                </div>
+                                <!-- //.bar -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <h4 class="uppercase">Sistemas operativos en red</h4>
+
+                                <div class="bar">
+                                    <span class="percent">85%</span>
+                                    <span class="item-progress" data-percent="85"></span>
+                                </div>
+                                <!-- //.bar -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <h4 class="uppercase">Aplicaciones ofimáticas </h4>
+
+                                <div class="bar">
+                                    <span class="percent">90%</span>
+                                    <span class="item-progress" data-percent="90"></span>
+                                </div>
+                                <!-- //.bar -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <h4 class="uppercase">Administración de Sistemas Gestores de DDBB</h4>
+
+                                <div class="bar">
+                                    <span class="percent">55%</span>
+                                    <span class="item-progress" data-percent="55"></span>
+                                </div>
+                                <!-- //.bar -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <h4 class="uppercase">Gestión de Bases de Datos</h4>
+
+                                <div class="bar">
+                                    <span class="percent">50%</span>
+                                    <span class="item-progress" data-percent="50"></span>
+                                </div>
+                                <!-- //.bar -->
+                            </div>
+                            <!-- //.item -->
+                        </div>
+                        <!-- //.bar-chart -->
+                    </div>
+                    <!-- //.col-md-6 -->
+
+                    <div class="col-sm-6 col-md-6">
+                        <div class="bar-chart">
+                            <div class="item">
+                                <h4 class="uppercase">Redes locales</h4>
+
+                                <div class="bar">
+                                    <span class="percent">95%</span>
+                                    <span class="item-progress" data-percent="95"></span>
+                                </div>
+                                <!-- //.bar -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <h4 class="uppercase">Planificación y Administración de Redes</h4>
+
+                                <div class="bar">
+                                    <span class="percent">80%</span>
+                                    <span class="item-progress" data-percent="80"></span>
+                                </div>
+                                <!-- //.bar -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <h4 class="uppercase">Servicios de Red e Internet</h4>
+
+                                <div class="bar">
+                                    <span class="percent">85%</span>
+                                    <span class="item-progress" data-percent="85"></span>
+                                </div>
+                                <!-- //.bar -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <h4 class="uppercase">Seguridad y Alta Disponibilidad</h4>
+
+                                <div class="bar">
+                                    <span class="percent">65%</span>
+                                    <span class="item-progress" data-percent="65"></span>
+                                </div>
+                                <!-- //.bar -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <h4 class="uppercase">Seguridad informática</h4>
+
+                                <div class="bar">
+                                    <span class="percent">70%</span>
+                                    <span class="item-progress" data-percent="70"></span>
+                                </div>
+                                <!-- //.bar -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <h4 class="uppercase">Lenguajes de Marca y Sistemas de Gestión</h4>
+
+                                <div class="bar">
+                                    <span class="percent">75%</span>
+                                    <span class="item-progress" data-percent="75"></span>
+                                </div>
+                                <!-- //.bar -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <h4 class="uppercase">Programación de servicios y procesos</h4>
+
+                                <div class="bar">
+                                    <span class="percent">50%</span>
+                                    <span class="item-progress" data-percent="50"></span>
+                                </div>
+                                <!-- //.bar -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <h4 class="uppercase">Programación multimedia y dispositivos móviles</h4>
+
+                                <div class="bar">
+                                    <span class="percent">45%</span>
+                                    <span class="item-progress" data-percent="45"></span>
+                                </div>
+                                <!-- //.bar -->
+                            </div>
+                            <!-- //.item -->
+                        </div>
+                        <!-- //.bar-chart -->
+                    </div>
+                    <!-- //.col-md-6 -->
+                </div>
+                <!-- //BAR CHART END -->
+            </div>
+            <!-- //.section-content -->
+        </div>
+        <!-- //.container -->
+
+    </section>
+    <!-- //KNOWLEDGE SECTION END -->
 @stop
