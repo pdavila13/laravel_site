@@ -35,11 +35,13 @@
 
         6.11. SECTION - WORK PROCESS
 
+        6.13. SECTION - BLOG
+
 7. MAP
 
 8. FOOTER
 
-/*-----------------------------------------------------------------------
+/*---------------------------------------------------------------------*/
 
 
 /*---------------------------------------------------------------------*/
@@ -56,6 +58,7 @@
 a {
   color: #da491c;
 }
+
 a:hover,
 a:focus {
   color: #da491c;
@@ -103,8 +106,34 @@ span.divider {
 /*---------------------------------------------------------------------*/
 /*  5. NAVIGATION
 /*---------------------------------------------------------------------*/
-.navbar.navbar-fixed-top .navbar-nav > li.active a,
-.navbar.navbar-fixed-top .navbar-nav > li.active a:hover {
+.navbar.navbar-fixed-top .navbar-nav > li.active > a {
+  color: #da491c;
+}
+
+.navbar.navbar-fixed-top .navbar-nav > li.active > a:hover {
+  color: #da491c;
+}
+
+.navbar.navbar-fixed-top .navbar-nav > li.active > a:focus {
+  color: #da491c;
+}
+
+.navbar.navbar-fixed-top .navbar-nav > li.dropdown.active > a,
+.navbar.navbar-fixed-top .navbar-nav > li.dropdown.active.open > a {
+  color: #da491c;
+}
+
+.navbar.navbar-fixed-top .navbar-nav > li.dropdown.active > a:hover,
+.navbar.navbar-fixed-top .navbar-nav > li.dropdown.active.open > a:hover {
+  color: #da491c;
+}
+
+.navbar.navbar-fixed-top .navbar-nav .dropdown-menu > li.active a {
+  color: #da491c;
+}
+
+.navbar.navbar-fixed-top .navbar-nav .dropdown-menu > li.active a:hover,
+.navbar.navbar-fixed-top .navbar-nav .dropdown-menu > li.active a:focus {
   color: #da491c;
 }
 
@@ -181,6 +210,14 @@ span.divider {
 /*  6.11. SECTION - WORK PROCESS
 /*---------------------------------------------------------------------*/
 .work-process .item .inner-content > i {
+  background-color: #da491c;
+}
+
+
+/*---------------------------------------------------------------------*/
+/*  6.13. SECTION - BLOG
+/*---------------------------------------------------------------------*/
+#blog .blog-post > .post-meta > span.date {
   background-color: #da491c;
 }
 

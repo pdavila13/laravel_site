@@ -69,8 +69,11 @@ MESSAGE;
 $mail = new PHPMailer;
         
 $mail->isSMTP();
+// $mail->SMTPSecure = 'ssl';
 $mail->SMTPAuth = TRUE;
 $mail->Host = $host;
+// $mail->Port = '465';
+
 $mail->Username = $username;
 $mail->Password = $password;
 
@@ -86,7 +89,7 @@ $mail->Subject = $subject;
 
 $mail->Body    = $htmlmessage;
 
-// Send the message, check for errors
+// Send the message
 if ( $mail->send()) 
 {
     $send = true;

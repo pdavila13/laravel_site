@@ -5,7 +5,7 @@ $(function(){
     /*  select2.full.js in order to support the containerCssClass and
     /*  dropdownCssClass option.
     /*-------------------------------------------------------------------*/
-    if ($.fn.select2) {
+    if ($.fn.select2){
         $(".select2").select2({
             minimumResultsForSearch: 'Infinity',
             containerCssClass: 'select2-container-custom',
@@ -17,6 +17,7 @@ $(function(){
     /*-------------------------------------------------------------------*/
     /*  2. Contact form request. Requires jquery validation js.
     /*-------------------------------------------------------------------*/
+    /*
     $('.validate').validate({
         errorPlacement: function(error, element) {
             if (element.attr('type') == 'radio' || element.attr('type') == 'checkbox') {
@@ -33,8 +34,9 @@ $(function(){
             'services[]': { // Makes "field (checkbox - services[])" always required
                 required: true
             }
-        }*/
+        }
     });
+    */
     
     $(document).on('submit', '#contact-form', function(e){
         e.preventDefault();

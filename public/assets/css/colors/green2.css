@@ -35,11 +35,13 @@
 
         6.11. SECTION - WORK PROCESS
 
+        6.13. SECTION - BLOG
+
 7. MAP
 
 8. FOOTER
 
-/*-----------------------------------------------------------------------
+/*---------------------------------------------------------------------*/
 
 
 /*---------------------------------------------------------------------*/
@@ -104,8 +106,34 @@ span.divider {
 /*---------------------------------------------------------------------*/
 /*  5. NAVIGATION
 /*---------------------------------------------------------------------*/
-.navbar.navbar-fixed-top .navbar-nav > li.active a,
-.navbar.navbar-fixed-top .navbar-nav > li.active a:hover {
+.navbar.navbar-fixed-top .navbar-nav > li.active > a {
+  color: #149b60;
+}
+
+.navbar.navbar-fixed-top .navbar-nav > li.active > a:hover {
+  color: #149b60;
+}
+
+.navbar.navbar-fixed-top .navbar-nav > li.active > a:focus {
+  color: #149b60;
+}
+
+.navbar.navbar-fixed-top .navbar-nav > li.dropdown.active > a,
+.navbar.navbar-fixed-top .navbar-nav > li.dropdown.active.open > a {
+  color: #149b60;
+}
+
+.navbar.navbar-fixed-top .navbar-nav > li.dropdown.active > a:hover,
+.navbar.navbar-fixed-top .navbar-nav > li.dropdown.active.open > a:hover {
+  color: #149b60;
+}
+
+.navbar.navbar-fixed-top .navbar-nav .dropdown-menu > li.active a {
+  color: #149b60;
+}
+
+.navbar.navbar-fixed-top .navbar-nav .dropdown-menu > li.active a:hover,
+.navbar.navbar-fixed-top .navbar-nav .dropdown-menu > li.active a:focus {
   color: #149b60;
 }
 
@@ -182,6 +210,14 @@ span.divider {
 /*  6.11. SECTION - WORK PROCESS
 /*---------------------------------------------------------------------*/
 .work-process .item .inner-content > i {
+  background-color: #149b60;
+}
+
+
+/*---------------------------------------------------------------------*/
+/*  6.13. SECTION - BLOG
+/*---------------------------------------------------------------------*/
+#blog .blog-post > .post-meta > span.date {
   background-color: #149b60;
 }
 

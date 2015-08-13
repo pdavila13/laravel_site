@@ -84,6 +84,9 @@
 <!-- Main JS -->
 <script src="{{ asset ('assets/js/main.js') }}"></script>
 
+<!-- Contact JS -->
+<script src="{{ asset ('assets/js/contact.js') }}"></script>
+
 <!-- Map JS -->
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 <script src="{{ asset ('assets/js/map.js') }}"></script>

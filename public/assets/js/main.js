@@ -4,34 +4,49 @@ $(function(){
     /*  1. Preloader. Requires jQuery jpreloader plugin.
     /*-------------------------------------------------------------------*/
     $(document).ready(function() {
-        $('body').jpreLoader({
-            showPercentage: false,
-            loaderVPos: '50%'
-        });
+        if ($.fn.jpreLoader){
+            $('body').jpreLoader({
+                showPercentage: false,
+                loaderVPos: '50%'
+            });
+        }
     });
     
-    
+
     /*-------------------------------------------------------------------*/
     /*  2. Makes the height of all selected elements (".match-height")
     /*  exactly equal. Requires jQuery matchHeight plugin.
     /*-------------------------------------------------------------------*/
     $(window).smartload(function(){
-        $('.match-height').matchHeight();
+        if ($.fn.matchHeight){
+            $('.match-height').matchHeight();
+        }
     });
     
     
     /*-------------------------------------------------------------------*/
-    /*  3. Page scrolling feature, requires jQuery Easing plugin.
+    /*  3. Just did another hack of dropdown menu for Bootstrap scrollspy.
+    /*-------------------------------------------------------------------*/
+    $('body').on('activate.bs.scrollspy', function(){
+        $('.page-scroll.dropdown > .dropdown-toggle').each(function(){
+            $(this).attr('data-target', '#');
+        });
+    });
+    
+    
+    /*-------------------------------------------------------------------*/
+    /*  4. Page scrolling feature, requires jQuery Easing plugin.
     /*-------------------------------------------------------------------*/
     var pageScroll = function(){
-        $('.page-scroll a').bind('click', function(e){
+        $('.page-scroll > a').bind('click', function(e){
             e.preventDefault();
-
-            var $anchor = $(this);
-            var offset = $('body').attr('data-offset');
-
+            
+            var anchor = $(this),
+            href = anchor.attr('href'),
+            offset = $('body').attr('data-offset');
+            
             $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top - (offset - 1)
+                scrollTop: $(href).offset().top - (offset - 1)
             }, 1500, 'easeInOutExpo');
         });
     };
@@ -40,53 +55,113 @@ $(function(){
     
     
     /*-------------------------------------------------------------------*/
-    /*  4. Make navigation menu on your page always stay visible.
+    /*  5. Make navigation menu on your page always stay visible.
     /*  Requires jQuery Sticky plugin.
     /*-------------------------------------------------------------------*/
     var stickyMenu = function(){
-        var nav = $('.navbar.navbar-fixed-top');
-        nav.unstick();
-        nav.sticky({topSpacing: 0});
+        var ww = Math.max($(window).width(), window.innerWidth),
+        nav = $('.navbar.navbar-fixed-top');
+
+        if ($.fn.unstick){
+            nav.unstick();
+        }
+        
+        if ($.fn.sticky && ww >= 992){
+            nav.sticky({topSpacing: 0});
+        }
     };
     
     stickyMenu();
     
-    // Call pageScroll() and stickyMenu() when window is resized.
+    // Call stickyMenu() when window is resized.
     $(window).smartresize(function(){
-        pageScroll();
         stickyMenu();
     });
     
     
     /*-------------------------------------------------------------------*/
-    /*  5. Portfolio gallery. Requires jQuery Magnific Popup plugin.
+    /*  6. Navbar dropdown opening on hover,
+    /*  and opening on click for collapsed navbar.
     /*-------------------------------------------------------------------*/
-    $('.portfolio').magnificPopup({
-        delegate: 'a.zoom',
-        type: 'image',
-        fixedContentPos: false,
+    var toggleNavbarMethod = function(){
+        var ww = Math.max($(window).width(), window.innerWidth),
+        dropdown = $('.navbar .dropdown');
         
-        // Delay in milliseconds before popup is removed
-        removalDelay: 300,
-        
-        // Class that is added to popup wrapper and background
-        mainClass: 'mfp-fade',
-        
-        gallery: {
-            enabled: true,
-            preload: [0,2],
-            arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>',
-            tPrev: 'Previous Project',
-            tNext: 'Next Project'
+        if (ww >= 992){
+            dropdown.on('mouseover', function(){
+                if (!$(this).hasClass('open')){
+                    $(this).addClass('open');
+                }
+            }).on('mouseout', function(){
+                if ($(this).hasClass('open')){
+                    $(this).removeClass('open');
+                }
+            });
         }
+        else {
+            dropdown.off('mouseover').off('mouseout');
+        }
+    };
+    
+    toggleNavbarMethod();
+    
+    // Call toggleNavbarMethod(); when window is resized.
+    $(window).smartresize(function(){
+        toggleNavbarMethod();
     });
     
     
     /*-------------------------------------------------------------------*/
-    /*  6. Column Chart (Section - My Strenghts)
+    /*  7. Prevent bootstrap dropdown closing when clicked.
+    /*-------------------------------------------------------------------*/
+    $('.dropdown-menu').click(function(e){
+        e.stopPropagation();
+    });
+    
+    
+    /*-------------------------------------------------------------------*/
+    /*  8. Automatically retract the navigation
+    /*  when users click on a page for mobile.
+    /*-------------------------------------------------------------------*/
+    document.body.addEventListener('touchmove', function(){
+        if (!$(this).is('.navbar-toggle') || !$(this).is('.navbar-collapse') ||
+            !$(this).is('.dropdown-toggle') || !$(this).is('.page-scroll > a')){
+            $('.berg-collapse').collapse('hide');
+        }
+    }, false);
+    
+    
+    /*-------------------------------------------------------------------*/
+    /*  9. Portfolio gallery. Requires jQuery Magnific Popup plugin.
+    /*-------------------------------------------------------------------*/
+    if ($.fn.magnificPopup){
+        $('.portfolio').magnificPopup({
+            delegate: 'a.zoom',
+            type: 'image',
+            fixedContentPos: false,
+
+            // Delay in milliseconds before popup is removed
+            removalDelay: 300,
+
+            // Class that is added to popup wrapper and background
+            mainClass: 'mfp-fade',
+
+            gallery: {
+                enabled: true,
+                preload: [0,2],
+                arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>',
+                tPrev: 'Previous Project',
+                tNext: 'Next Project'
+            }
+        });
+    }
+    
+    
+    /*-------------------------------------------------------------------*/
+    /*  10. Column Chart (Section - My Strenghts)
     /*-------------------------------------------------------------------*/
     var columnChart = function (){
-        $('.column-chart > .chart > .item > .bar > .item-progress').each(function(){
+        $('.column-chart').find('.item-progress').each(function(){
             var item = $(this);
             var newHeight = $(this).parent().height() * ($(this).data('percent') / 100);
             
@@ -114,13 +189,13 @@ $(function(){
     
     
     /*-------------------------------------------------------------------*/
-    /*  7. Section - My Resume
+    /*  11. Section - My Resume
     /*-------------------------------------------------------------------*/
     var resumeCollapse = function (){
-        var workItem = $('#work .collapse:not(:first)');
-        var educationItem = $('#education .collapse:not(:first)');
-        var ww = Math.max($(window).width(), window.innerWidth);
-
+        var ww = Math.max($(window).width(), window.innerWidth),
+        workItem = $('.collapse:not(:first)', '#work'),
+        educationItem = $('.collapse:not(:first)', '#education');
+        
         if (ww < 768){
             workItem.collapse('show');
             educationItem.collapse('show');
@@ -143,22 +218,24 @@ $(function(){
     
     
     /*-------------------------------------------------------------------*/
-    /*	8. References slider. Requires Flexslider plugin.
+    /*	12. References slider. Requires Flexslider plugin.
     /*-------------------------------------------------------------------*/
     $(window).smartload(function(){
-        var flex = $('.flexslider.references');
+        if ($.fn.flexslider){
+            var flex = $('.flexslider.references');
     
-        flex.flexslider({
-            selector: ".slides > .item",
-            manualControls: ".flex-control-nav li",
-            directionNav : false,
-            slideshowSpeed: 4000,
-            after: function(slider){
-                if (!slider.playing) {
-                    slider.play();
+            flex.flexslider({
+                selector: ".slides > .item",
+                manualControls: ".flex-control-nav li",
+                directionNav : false,
+                slideshowSpeed: 4000,
+                after: function(slider){
+                    if (!slider.playing) {
+                        slider.play();
+                    }
                 }
-            }
-        }); 
+            }); 
+        }
     });
     
     $('a.flex-prev').on('click', function(e){
@@ -173,13 +250,13 @@ $(function(){
     
     
     /*-------------------------------------------------------------------*/
-    /*  9. Circle Chart (Section - Skills & Expertise)
+    /*  13. Circle Chart (Section - Skills & Expertise)
     /*-------------------------------------------------------------------*/
     var circleChart = function (){
-        $('.circle-chart .item > .circle > .item-progress').each(function(){
-            var item = $(this);
-            var maxHeight = 108;
-            var newHeight = maxHeight * ($(this).data('percent') / 100);
+        $('.circle-chart').find('.item-progress').each(function(){
+            var item = $(this),
+            maxHeight = 108,
+            newHeight = maxHeight * ($(this).data('percent') / 100);
             
             // Only animate elements when using non-mobile devices    
             if (jQuery.browser.mobile === false){
@@ -205,13 +282,13 @@ $(function(){
     
     
     /*-------------------------------------------------------------------*/
-    /*  10. Bar Chart (Section - Knowledge)
+    /*  14. Bar Chart (Section - Knowledge)
     /*-------------------------------------------------------------------*/
     var barChart = function (){
-        $('.bar-chart > .item > .bar > .item-progress').each(function(){
-            var item = $(this);
-            var percent = $(this).prev();
-            var newWidth = $(this).parent().width() * ($(this).data('percent') / 100);
+        $('.bar-chart').find('.item-progress').each(function(){
+            var item = $(this),
+            percent = $(this).prev(),
+            newWidth = $(this).parent().width() * ($(this).data('percent') / 100);
             
             // Only animate elements when using non-mobile devices    
             if (jQuery.browser.mobile === false){
@@ -247,14 +324,16 @@ $(function(){
     
     
     /*-------------------------------------------------------------------*/
-    /*  11. Milestones counter.
+    /*  15. Milestones counter.
     /*-------------------------------------------------------------------*/
     var counter = function (){
-        var number = $('.milestones .number');
+        var number = $('.milestones').find('.number');
         
-        number.countTo({
-            speed: 3000
-        });
+        if ($.fn.countTo){
+            number.countTo({
+                speed: 3000
+            });
+        }
     };
     
     if (jQuery.browser.mobile === false){

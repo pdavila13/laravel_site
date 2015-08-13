@@ -152,6 +152,7 @@
 	
 	//create preloaded image
 	var preloading = function() {
+                if (!items.length) completeLoading();
 		for (var i = 0; i < items.length; i++) {
 			if(loadImg(items[i]));
 		}

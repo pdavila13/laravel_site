@@ -14,11 +14,11 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center">
                         <h2 class="section-title uppercase">Currículum</h2>
-
+                        <!--
                         <p class="section-subtitle">
                             Descripción
                         </p>
-
+                        -->
                         <span class="divider center"></span>
                     </div>
                     <!-- //.col-md-8 -->

@@ -14,11 +14,11 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <h2 class="section-title uppercase">Contacto</h2>
-
+                        <!--
                         <p class="section-subtitle">
-                            Descripción de contacto
+                            Descripción
                         </p>
-
+                        -->
                         <span class="divider center"></span>
                     </div>
                     <!-- //.col-md-12 -->
@@ -29,7 +29,7 @@
                     <div class="col-md-8 col-md-offset-2">
 
                         <!-- CONTACT FORM START -->
-                        <form action="{{ asset ('contactMail/send_mail.php') }}" method="post" name="contact-form" id="contact-form" class="contact-form validate element-line" role="form">
+                        <form action="{{ asset('contactMail/send_mail.php') }}" method="post" name="contact-form" id="contact-form" class="contact-form validate element-line" role="form">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
@@ -45,7 +45,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <div class="input-group input-group-lg">
-                                            <input type="email" name="email" id="email" class="form-control required email" placeholder="Correo electrónico" autocomplete="off">
+                                            <input type="email" name="email" id="email" class="form-control required email" placeholder="Email" autocomplete="off">
                                         </div>
                                         <!-- //.input-group -->
                                     </div>

@@ -4,29 +4,25 @@ $(function(){
     if (jQuery.browser.mobile === false){
         
         /*-------------------------------------------------------------------*/
-        /*  1. Section - Profile
+        /*  1. Section subtitle
         /*-------------------------------------------------------------------*/
-        $('#profile .profile-text p:not(:first)').css('opacity', 0).one('inview', function(isInView){
-            if (isInView) {$(this).addClass('animated bounceInUp').css('opacity', 1);}
+        $('.section-subtitle').css('opacity', 0).one('inview', function(isInView){
+            if (isInView) {$(this).addClass('animated bounceInLeft').css('opacity', 1);}
         });
         
         
         /*-------------------------------------------------------------------*/
-        /*  2. Section - Portfolio
+        /*  2. Section - Profile
         /*-------------------------------------------------------------------*/
-        $('#portfolio .section-subtitle').css('opacity', 0).one('inview', function(isInView){
-            if (isInView) {$(this).addClass('animated bounceInLeft').css('opacity', 1);}
+        $('.profile-text', '#profile').find('p:not(:first)').css('opacity', 0).one('inview', function(isInView){
+            if (isInView) {$(this).addClass('animated bounceInUp').css('opacity', 1);}
         });
         
         
         /*-------------------------------------------------------------------*/
         /*  3. Section - Services
         /*-------------------------------------------------------------------*/
-        $('#services .section-subtitle').css('opacity', 0).one('inview', function(isInView){
-            if (isInView) {$(this).addClass('animated bounceInLeft').css('opacity', 1);}
-        });
-        
-        $('#services .services .item > .inner-content h4').each(function(i){            
+        $('.inner-content', '#services').find('h4').each(function(i){            
             var element = $(this),
             itemsDelay   = ( isNaN($(this).data('animation-delay')) ? 50 : $(this).data('animation-delay'));
             element.css('opacity', 0).one('inview', function(isInView) {
@@ -42,15 +38,11 @@ $(function(){
         /*-------------------------------------------------------------------*/
         /*  4. Section - Strenghts
         /*-------------------------------------------------------------------*/
-        $('#strenghts .section-subtitle').css('opacity', 0).one('inview', function(isInView){
+        $('.legend-left', '#strenghts').find('.legend-title').css('opacity', 0).one('inview', function(isInView){
             if (isInView) {$(this).addClass('animated bounceInLeft').css('opacity', 1);}
         });
         
-        $('#strenghts .legend.legend-left > .legend-title').css('opacity', 0).one('inview', function(isInView){
-            if (isInView) {$(this).addClass('animated bounceInLeft').css('opacity', 1);}
-        });
-        
-        $('#strenghts .legend.legend-right > .item').each(function(i){            
+        $('.legend-right', '#strenghts').find('.item').each(function(i){
             var element = $(this),
             itemsDelay   = ( isNaN($(this).data('animation-delay')) ? 50 : $(this).data('animation-delay'));
             element.css('opacity', 0).one('inview', function(isInView) {
@@ -61,16 +53,12 @@ $(function(){
                 }
             });
         });
-        
+       
         
         /*-------------------------------------------------------------------*/
         /*  5. Section - Resume
         /*-------------------------------------------------------------------*/
-        $('#resume .section-subtitle').css('opacity', 0).one('inview', function(isInView){
-            if (isInView) {$(this).addClass('animated bounceInLeft').css('opacity', 1);}
-        });
-        
-        $('#education .resume-item:not(:first)').each(function(i){            
+        $('#education').find('.resume-item:not(:first)').each(function(i){            
             var element = $(this),
             itemsDelay   = ( isNaN($(this).data('animation-delay')) ? 50 : $(this).data('animation-delay'));
             element.css('opacity', 0).one('inview', function(isInView) {
@@ -82,51 +70,7 @@ $(function(){
             });
         });
         
-        $('#work .resume-item:not(:first)').each(function(i){            
-            var element = $(this),
-            itemsDelay   = ( isNaN($(this).data('animation-delay')) ? 50 : $(this).data('animation-delay'));
-            element.css('opacity', 0).one('inview', function(isInView) {
-                if (isInView){
-                    setTimeout(function(){
-                        element.addClass('animated bounceInUp').css('opacity', 1);
-                    } , itemsDelay * (i * 2));
-                }
-            });
-        });
-        
-        
-        /*-------------------------------------------------------------------*/
-        /*  6. Section - References
-        /*-------------------------------------------------------------------*/
-        $('#references .section-subtitle').css('opacity', 0).one('inview', function(isInView){
-            if (isInView) {$(this).addClass('animated bounceInLeft').css('opacity', 1);}
-        });
-        
-        
-        /*-------------------------------------------------------------------*/
-        /*  7. Section - Skills
-        /*-------------------------------------------------------------------*/
-        $('#skills .section-subtitle').css('opacity', 0).one('inview', function(isInView){
-            if (isInView) {$(this).addClass('animated bounceInLeft').css('opacity', 1);}
-        });
-        
-        
-        /*-------------------------------------------------------------------*/
-        /*  8. Section - Knowledge
-        /*-------------------------------------------------------------------*/
-        $('#knowledge .section-subtitle').css('opacity', 0).one('inview', function(isInView){
-            if (isInView) {$(this).addClass('animated bounceInLeft').css('opacity', 1);}
-        });
-        
-        
-        /*-------------------------------------------------------------------*/
-        /*  9. Section - Accolades
-        /*-------------------------------------------------------------------*/
-        $('#accolades .section-subtitle').css('opacity', 0).one('inview', function(isInView){
-            if (isInView) {$(this).addClass('animated bounceInLeft').css('opacity', 1);}
-        });
-        
-        $('.accolades .item:not(:first)').each(function(i){            
+        $('#work').find('.resume-item:not(:first)').each(function(i){            
             var element = $(this),
             itemsDelay   = ( isNaN($(this).data('animation-delay')) ? 50 : $(this).data('animation-delay'));
             element.css('opacity', 0).one('inview', function(isInView) {
@@ -140,21 +84,25 @@ $(function(){
         
         
         /*-------------------------------------------------------------------*/
-        /*  10. Section - Milestones
+        /*  6. Section - Accolades
         /*-------------------------------------------------------------------*/
-        $('#milestones .section-subtitle').css('opacity', 0).one('inview', function(isInView){
-            if (isInView) {$(this).addClass('animated bounceInLeft').css('opacity', 1);}
+        $('.accolades').find('.item:not(:first)').each(function(i){            
+            var element = $(this),
+            itemsDelay   = ( isNaN($(this).data('animation-delay')) ? 50 : $(this).data('animation-delay'));
+            element.css('opacity', 0).one('inview', function(isInView) {
+                if (isInView){
+                    setTimeout(function(){
+                        element.addClass('animated bounceInUp').css('opacity', 1);
+                    } , itemsDelay * (i * 2));
+                }
+            });
         });
         
         
         /*-------------------------------------------------------------------*/
-        /*  11. Section - Work Process
+        /*  7. Section - Work Process
         /*-------------------------------------------------------------------*/
-        $('#work-process .section-subtitle').css('opacity', 0).one('inview', function(isInView){
-            if (isInView) {$(this).addClass('animated bounceInLeft').css('opacity', 1);}
-        });
-        
-        $('.work-process .item > .inner-content > .title').each(function(i){            
+        $('#work-process').find('.title').each(function(i){            
             var element = $(this),
             itemsDelay   = ( isNaN($(this).data('animation-delay')) ? 50 : $(this).data('animation-delay'));
             
@@ -169,28 +117,24 @@ $(function(){
         
         
         /*-------------------------------------------------------------------*/
-        /*  12. Section - Contact
+        /*  8. Section - Contact
         /*-------------------------------------------------------------------*/
-        $('#contact .section-subtitle').css('opacity', 0).one('inview', function(isInView){
-            if (isInView) {$(this).addClass('animated bounceInLeft').css('opacity', 1);}
-        });
-        
-        $('#contact .contact-details').css('opacity', 0).one('inview', function(isInView){
+        $('.contact-details', '#contact').css('opacity', 0).one('inview', function(isInView){
             if (isInView) {$(this).addClass('animated flipInX').css('opacity', 1);}
         });
         
         
         /*-------------------------------------------------------------------*/
-        /*  13. Footer
+        /*  9. Footer
         /*-------------------------------------------------------------------*/
-        $('.footer .social-icons .item').each(function(i){            
+        $('.footer').find('.item').each(function(i){
             var element = $(this),
             itemsDelay   = ( isNaN($(this).data('animation-delay')) ? 50 : $(this).data('animation-delay'));
             
             element.css('opacity', 0).one('inview', function(isInView) {
                 if (isInView){
                     setTimeout(function(){
-                        element.addClass('animated bounceInUp').css('opacity', 1);
+                        element.addClass('animated bounceIn').css('opacity', 1);
                     } , itemsDelay * (i * 2));
                 }
             });
