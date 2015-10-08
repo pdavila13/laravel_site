@@ -17,6 +17,7 @@ $(function(){
     /*-------------------------------------------------------------------*/
     /*  2. Contact form request. Requires jquery validation js.
     /*-------------------------------------------------------------------*/
+
     /*
     $('.validate').validate({
         errorPlacement: function(error, element) {
@@ -26,18 +27,19 @@ $(function(){
             else {
                 error.appendTo(element.parent());
             }
-        },
-        /*rules: {
-            'project_class': { // Makes "field (radio button - project_class)" always required
-                required: true
-            },
-            'services[]': { // Makes "field (checkbox - services[])" always required
-                required: true
-            }
         }
+        rules: {
+         'project_class': { // Makes "field (radio button - project_class)" always required
+         required: true
+         },
+         'services[]': { // Makes "field (checkbox - services[])" always required
+         required: true
+         }
+         }
     });
     */
-    
+
+
     $(document).on('submit', '#contact-form', function(e){
         e.preventDefault();
         
