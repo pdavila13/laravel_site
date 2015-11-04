@@ -60,4 +60,9 @@ class PagesController extends Controller {
         return view('pages.contact');
     }
 
+    public function download(){
+        $pathToFile = "../public/CV_PaoloDavila-es.pdf";
+        return response()->download($pathToFile);
+    }
+
 }

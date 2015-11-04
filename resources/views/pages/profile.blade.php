@@ -67,7 +67,7 @@
                                 <!-- //.col-md-5 -->
 
                                 <div class="col-sm-6 col-md-7">
-                                    <a href="{{ url('https://www.infojobs.net/candidate/cv/view/employer-view.xhtml?dgv=7516145593140242714&codiCv=7deace2e-c587-40eb-a5fd-6f02c0ba1e90') }}" class="btn btn-lg btn-custom">
+                                    <a href="{{ url('download') }}" class="btn btn-lg btn-custom">
                                         <i class="icon-File-Download"></i> Descargar Currículum
                                     </a>
                                 </div>
