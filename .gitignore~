@@ -1,5 +1,7 @@
 /vendor
 /node_modules
+/public/contactMail/send_mail.php
 Homestead.yaml
 Homestead.json
 .env
+.idea/

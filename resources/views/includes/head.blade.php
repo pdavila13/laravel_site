@@ -4,6 +4,8 @@
     <!-- Site Title -->
     <title>@yield('title','Paolo Dávila')</title>
 
+    <link rel="shortcut icon" href="{{ asset('assets/img/favicon.ico') }}">
+
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
