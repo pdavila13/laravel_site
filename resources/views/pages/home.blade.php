@@ -17,7 +17,7 @@
                             -->
 
                             <h1>Servicio técnico
-                                <span class="blinker"></span>
+                                <!--<span class="blinker"></span>-->
                             </h1>
 
                             <p>Reparación de ordenadores, Smartphones y tablets</p>
@@ -34,12 +34,13 @@
                         <!-- //.item -->
 
                         <div class="item">
+                            <!--
                             <h1 class="small">
                                 <span class="blinker"></span>
-                            </h1>
+                            </h1>-->
 
                             <h1>Administración de sistemas
-                                <span class="blinker"></span>
+                                <!--<span class="blinker"></span>-->
                             </h1>
 
                             <p>GNU/Linux, Microsoft Windows y Macintosh</p>
@@ -56,12 +57,13 @@
                         <!-- //.item -->
 
                         <div class="item">
+                            <!--
                             <h1 class="small">
                                 <span class="blinker"></span>
-                            </h1>
+                            </h1>-->
 
                             <h1>Administración de redes
-                                <span class="blinker"></span>
+                                <!--<span class="blinker"></span>-->
                             </h1>
 
                             <p>Instalación, configuración y mantenimiento</p>
@@ -78,12 +80,13 @@
                         <!-- //.item -->
 
                         <div class="item">
+                            <!--
                             <h1 class="small">
                                 <span class="blinker"></span>
-                            </h1>
+                            </h1>-->
 
                             <h1>Desarrollo web
-                                <span class="blinker"></span>
+                                <!--<span class="blinker"></span>-->
                             </h1>
 
                             <p>Aplicaciones web 100% a su medida</p>

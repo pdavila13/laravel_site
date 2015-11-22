@@ -27,7 +27,7 @@
 
                     <li>
                         <div class="item">
-                            <a href="{{ url('https://www.linkedin.com/profile/view?id=AAIAABk07wQB4Us7wE1Y7D4nfMXew9avwWSjKOU&trk=nav_responsive_tab_profile') }}" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            <a href="{{ url('https://es.linkedin.com/in/paolodavila') }}" target="_blank"><i class="fa fa-linkedin"></i></a>
                         </div>
                         <!-- //.item -->
                     </li>
@@ -39,12 +39,13 @@
                         <!-- //.item -->
                     </li>
 
+                    <!--
                     <li>
                         <div class="item">
                             <a href="#" target="_blank"><i class="fa fa-information"></i></a>
                         </div>
-                        <!-- //.item -->
                     </li>
+                    -->
                 </ul>
             </div>
             <!-- //.col-md-12 -->
